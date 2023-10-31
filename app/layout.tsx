@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
    return (
       <html lang="en">
          <body className={inter.className} suppressHydrationWarning>
-            <main className="max-w-10xl mx-auto">
+            <main className="mx-auto max-w-10xl">
                <Navbar />
                {children}
             </main>
