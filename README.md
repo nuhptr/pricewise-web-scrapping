@@ -15,6 +15,7 @@ Build scraper for price comparison of products from different websites. Using Ne
 -  [x] REACT-RESPONSIVE-CAROUSEL (https://www.npmjs.com/package/react-responsive-carousel) - npm install react-responsive-carousel
 -  [x] AXIOS (https://www.npmjs.com/package/axios) - npm install axios
 -  [x] CHEERIO (https://www.npmjs.com/package/cheerio) - npm install cheerio
+-  [x] MONGOOSE (https://www.npmjs.com/package/mongoose) - npm install mongoose
 
 ## Environment Variables
 
