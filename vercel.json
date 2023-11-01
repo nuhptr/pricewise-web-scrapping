@@ -1,8 +1,8 @@
 {
    "functions": {
-      "app/api/cron": {
+      "api/cron/route.ts": {
          "memory": 1000,
-         "maxDuration": 10
+         "maxDuration": 8
       }
    }
 }
