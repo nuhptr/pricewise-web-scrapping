@@ -1,8 +1,8 @@
 {
    "functions": {
-      "api/cron": {
+      "app/**": {
          "memory": 1000,
-         "maxDuration": 8
+         "maxDuration": 10
       }
    }
 }
