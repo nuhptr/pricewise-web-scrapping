@@ -1,0 +1,9 @@
+{
+   "functions": {
+      "api/cron": {
+         "memory": 3008,
+         "maxDuration": 10
+      }
+   },
+   "crons": [{ "path": "/api/cron", "schedule": "0 0 0 0 *" }]
+}
