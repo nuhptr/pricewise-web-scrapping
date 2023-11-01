@@ -1,14 +1,16 @@
 # Pricewise | Web scraper for price comparison
 
-Build scraper for price comparison of products from different websites. Using Nextjs, BrightData, and TailwindCSS.
+Build a scraper for price comparison of products from different websites. Using Nextjs, BrightData, and TailwindCSS.
+
+![pricewise](https://github.com/nuhptr/pricewise-web-scrapping/assets/50306963/bbbbe1c8-8421-44b5-824e-06cd1b575661)
 
 ## Features
 
 -  [x] Scrape data from different websites
 -  [x] Save data to database
--  [ ] ...
--  [ ] ...
--  [ ] ...
+-  [x] Show track price from Amazon
+-  [ ] Notify email
+-  [ ] Detail Product
 
 ## Dependencies
 
