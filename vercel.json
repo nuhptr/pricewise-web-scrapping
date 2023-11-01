@@ -1,8 +1,0 @@
-{
-   "functions": {
-      "app/**": {
-         "memory": 1000,
-         "maxDuration": 10
-      }
-   }
-}
