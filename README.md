@@ -16,6 +16,9 @@ Build scraper for price comparison of products from different websites. Using Ne
 -  [x] AXIOS (https://www.npmjs.com/package/axios) - npm install axios
 -  [x] CHEERIO (https://www.npmjs.com/package/cheerio) - npm install cheerio
 -  [x] MONGOOSE (https://www.npmjs.com/package/mongoose) - npm install mongoose
+-  [x] HEADLESS-UI (https://headlessui.dev/) - npm install @headlessui/react
+-  [x] NODEMAILER (https://nodemailer.com/about/) - npm install nodemailer
+-  [x] @TYPES/NODEMAILER (https://www.npmjs.com/package/@types/nodemailer) - npm install @types/nodemailer
 
 ## Environment Variables
 
