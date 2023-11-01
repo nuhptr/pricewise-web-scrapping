@@ -33,9 +33,10 @@ export default function Searchbar(): React.JSX.Element {
 
          // SCRAPE PRODUCT PAGE
          const product = await scrapeAndStoreProduct(searchPrompt)
+         console.log(product)
 
          setIsLoading(false)
-         setSearchPrompt("")
+         // setSearchPrompt("")
       } catch (error) {
          setIsLoading(false)
       }
