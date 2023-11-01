@@ -36,14 +36,14 @@ export default function Searchbar(): React.JSX.Element {
          console.log(product)
 
          setIsLoading(false)
-         // setSearchPrompt("")
+         setSearchPrompt("")
       } catch (error) {
          setIsLoading(false)
       }
    }
 
    return (
-      <form className="flex flex-wrap gap-4 mt-12" onSubmit={handleSubmit}>
+      <form className="flex flex-wrap mt-12 gap-4" onSubmit={handleSubmit}>
          <input
             type="text"
             value={searchPrompt}
