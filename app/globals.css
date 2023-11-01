@@ -96,7 +96,7 @@
   }
 
   .dialog-head_text {
-    @apply text-secondary text-lg leading-[24px] font-semibold mt-4;
+    @apply text-secondary font-spaceGrotesk text-lg leading-[24px] font-semibold mt-4;
   }
 
   .dialog-input_container {
