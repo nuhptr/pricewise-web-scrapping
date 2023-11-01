@@ -1,5 +1,3 @@
-"use server"
-
 import nodemailer from "nodemailer"
 
 import { EmailContent, EmailProductInfo, NotificationType } from "@/types"
@@ -76,15 +74,15 @@ export const generateEmailBody = (product: EmailProductInfo, type: NotificationT
 
 const transporter = nodemailer.createTransport({
    pool: true,
-   service: "gmail",
+   service: "hotmail",
    port: 2525,
-   auth: { user: "jujutsuthecode@gmail.com", pass: process.env.EMAIL_PASSWORD },
+   auth: { user: "nugrahaadi733@gmail.com", pass: process.env.EMAIL_PASSWORD },
    maxConnections: 1,
 })
 
 export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) => {
    const mailOptions = {
-      from: "jujutsuthecode@gmail.com",
+      from: "nugrahaadi733@gmail.com",
       to: sendTo,
       html: emailContent.body,
       subject: emailContent.subject,
