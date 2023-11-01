@@ -5,8 +5,11 @@ import { revalidatePath } from "next/cache"
 import { connectToDB } from "./mongoose"
 import { scrapeAmazonProduct } from "./scraper"
 
-import { getAveragePrice, getHighestPrice, getLowestPrice } from "./utils"
 import Product from "./product.model"
+import { getAveragePrice, getHighestPrice, getLowestPrice } from "./utils"
+import { generateEmailBody, sendEmail } from "./nodemailer"
+
+import { User } from "@/types"
 
 //? SCRAPED AND STORE IT TO MONGODB
 export async function scrapeAndStoreProduct(productUrl: string) {
@@ -80,5 +83,27 @@ export async function getSimilarProducts(productId: string) {
       return similarProducts
    } catch (error) {
       console.log(error)
+   }
+}
+
+//? ADD USER EMAIL TO PRODUCTS
+export async function addUserEmailToProduct(productId: string, userEmail: string) {
+   try {
+      connectToDB()
+      const product = await Product.findById(productId)
+      if (!product) return null
+
+      const userExist = product.users.some((user: User) => user.email === userEmail)
+
+      if (!userExist) {
+         product.users.push({ email: userEmail })
+
+         await product.save()
+
+         const emailContent = generateEmailBody(product, "WELCOME")
+         await sendEmail(emailContent, [userEmail])
+      }
+   } catch (error) {
+      console.error(error)
    }
 }
