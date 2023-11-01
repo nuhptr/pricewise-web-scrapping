@@ -53,7 +53,7 @@ export async function GET() {
          })
       )
 
-      return NextResponse.json({ message: "Ok", data: updatedProducts })
+      return NextResponse.json({ message: "Ok", data: updatedProducts, maxDuration: 10 })
    } catch (error: any) {
       throw new Error(`Failed to get all products: ${error.message}`)
    }
