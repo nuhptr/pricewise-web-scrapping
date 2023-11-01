@@ -106,8 +106,5 @@ export const getEmailNotifType = (scrapedProduct: Product, currentProduct: Produ
 
 //? FORMAT NUMBER
 export const formatNumber = (num: number = 0) => {
-   return num.toLocaleString(undefined, {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-   })
+   return num.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })
 }

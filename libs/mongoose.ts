@@ -2,6 +2,7 @@ import mongoose from "mongoose"
 
 let isConnected = false // Variable to track connection status
 
+//? CONNECT TO MONGODB
 export const connectToDB = async () => {
    mongoose.set("strictQuery", true)
 
